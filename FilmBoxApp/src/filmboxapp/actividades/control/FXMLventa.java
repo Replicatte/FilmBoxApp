@@ -5,6 +5,8 @@
  */
 package filmboxapp.actividades.control;
 
+import static filmboxapp.FXMLmainController.proyecSelect;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -13,12 +15,16 @@ import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 import modelo.Proyeccion;
 import modelo.Sala.localidad;
 
@@ -147,16 +153,26 @@ public class FXMLventa implements Initializable {
     }
 
     @FXML
-    private void listenComprar(ActionEvent event) {
+    private void listenComprar(ActionEvent event) throws IOException {
+        
         for (int columna = 0; columna < seleccionadas[0].length; columna++) {
             for (int fila = 0; fila < seleccionadas.length; fila++) {
                 if (seleccionadas[fila][columna] == localidad.vendida) {
                     proyecSelect.getSala().updateLocalidad(fila, columna, localidad.vendida);
                 }
-
             }
         }
-        ((Node) (event.getSource())).getScene().getWindow().hide();
+        FXMLLoader myLoad = new FXMLLoader(getClass().getResource("/filmboxapp/FXMLTiquet.fxml"));
+        Parent root = myLoad.load();
+
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Impresión de tiquet: " + proyecSelect.getPelicula().getTitulo());
+
+        stage.show();
+        ((FXMLTiquetController) myLoad.getController()).dameProyeccion(proyecSelect);
+//      ((Node) (event.getSource())).getScene().getWindow().hide();
         event.consume();
     }
 

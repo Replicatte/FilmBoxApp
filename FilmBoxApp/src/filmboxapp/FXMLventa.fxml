@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"  stylesheets="@resources/secondaryStyle.css" fx:controller="filmboxapp.actividades.control.FXMLventa" >
+<VBox alignment="CENTER" stylesheets="@resources/secondaryStyle.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="filmboxapp.actividades.control.FXMLventa">
    <children>
       <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
          <children>
@@ -318,7 +318,7 @@
                                           <Font name="Arial Black" size="12.0" />
                                        </font>
                                     </Button>
-                                    <Button id="botonCancelar" fx:id="botonCancelar" alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#listenCancelar" prefHeight="50.0" text="CANCELAR">
+                                    <Button id="botonCancelar" fx:id="botonCancelar" alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#listenCancelar" prefHeight="50.0" text="SALIR">
                                        <font>
                                           <Font name="Arial Black" size="12.0" />
                                        </font>

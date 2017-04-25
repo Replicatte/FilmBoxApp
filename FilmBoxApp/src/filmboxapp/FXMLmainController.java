@@ -82,8 +82,6 @@ public class FXMLmainController implements Initializable {
     private Button botonVentaReserva;
     @FXML
     private Button botonVerSala;
-    @FXML
-    private Button botonVerReservas;
 
     public static Proyeccion proyecSelect = null;
 
@@ -132,8 +130,6 @@ public class FXMLmainController implements Initializable {
 
                 botonVerSala.setDisable(false);
                 botonVerSala.setOpacity(1);
-                botonVerReservas.setDisable(false);
-                botonVerReservas.setOpacity(1);
 
             } else {
 
@@ -148,8 +144,6 @@ public class FXMLmainController implements Initializable {
 
                 botonVerSala.setDisable(true);
                 botonVerSala.setOpacity(0.15);
-                botonVerReservas.setDisable(true);
-                botonVerReservas.setOpacity(0.15);
             }
         });
 

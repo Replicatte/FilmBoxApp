@@ -3,8 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/repli/Documents/NetBeansProjects/00_SMARTDEV/EntregaCinema/FilmBoxApp/nbproject/jfx-impl.xml</file>
-            <file>file:/C:/Users/repli/Documents/NetBeansProjects/00_SMARTDEV/EntregaCinema/FilmBoxApp/src/filmboxapp/FXMLmainController.java</file>
+            <file>file:/C:/Users/repli/Documents/NetBeansProjects/00_SMARTDEV/EntregaCine/FilmBoxApp/src/filmboxapp/actividades/control/FXMLreserva.java</file>
+            <file>file:/C:/Users/repli/Documents/NetBeansProjects/00_SMARTDEV/EntregaCine/FilmBoxApp/src/filmboxapp/FXMLmain.fxml</file>
+            <file>file:/C:/Users/repli/Documents/NetBeansProjects/00_SMARTDEV/EntregaCine/FilmBoxApp/src/filmboxapp/FXMLTiquet.fxml</file>
+            <file>file:/C:/Users/repli/Documents/NetBeansProjects/00_SMARTDEV/EntregaCine/FilmBoxApp/src/filmboxapp/actividades/control/FXMLTiquetController.java</file>
+            <file>file:/C:/Users/repli/Documents/NetBeansProjects/00_SMARTDEV/EntregaCine/FilmBoxApp/src/filmboxapp/actividades/control/FXMLventa.java</file>
         </group>
     </open-files>
 </project-private>
