@@ -22,7 +22,7 @@ public class Principal extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLmain.fxml"));
         
         Scene scene = new Scene(root);
-        
+        stage.setTitle("FilmBoxApp");
         stage.setScene(scene);
         stage.show();
     }

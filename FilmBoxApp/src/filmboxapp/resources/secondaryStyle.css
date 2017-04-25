@@ -1,0 +1,79 @@
+.bordesPane{
+
+    -fx-background-color:#120045;
+}
+
+.labelBlanco{   
+    -fx-text-fill:white;
+}
+
+#panelGris{
+
+    -fx-background-color: lightgrey;
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 30, 0, 0, 0);
+
+    -fx-border-width: 5px;
+
+
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 5px, 5px, 5px, 5px;
+}
+
+#panelRojo{
+    -fx-background-color: #aa293c;
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 30, 0, 0, 0);
+
+    -fx-border-width: 5px;
+
+
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 5px, 5px, 5px, 5px;
+}
+
+#botonAceptar {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 2 0, 0 0 3 0, 0 0 4 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #83fcc2 0%, #9df9cd 100%),
+        #83fcc2,
+        #9df9cd,
+        radial-gradient(center 50% 50%, radius 100%, #4df2a2, #41e294);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#botonAceptar:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #83fcc2 0%, #9df9cd 100%),
+        #83fcc2,
+        #9df9cd,
+        radial-gradient(center 50% 50%, radius 100%, #4df2a2, #41e294);
+}
+#botonAceptar:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+#botonCancelar {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 2 0, 0 0 3 0, 0 0 4 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #ffffa0 0%, #ffffaa 100%),
+        #ffffa0,
+        #ffffaa,
+        radial-gradient(center 50% 50%, radius 100%, ffff4c, ffff59);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+#botonCancelar:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #ffffa0 0%, #ffffaa 100%),
+        #ffffa0,
+        #ffffaa,
+        radial-gradient(center 50% 50%, radius 100%, ffff4c, ffff59);
+}
+#botonCancelar:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}

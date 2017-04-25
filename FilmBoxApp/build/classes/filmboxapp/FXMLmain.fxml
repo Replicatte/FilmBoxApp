@@ -29,7 +29,7 @@
                         <Font name="Arial Black" size="17.0" />
                      </font>
                   </Label>
-                  <DatePicker fx:id="selectorDia" maxWidth="1.7976931348623157E308" onAction="#seleccionDia" />
+                  <DatePicker fx:id="selectorDia" maxWidth="1.7976931348623157E308" onAction="#seleccionDia" promptText="01/4/2017" />
                   <Label fx:id="ins2" maxWidth="1.7976931348623157E308" styleClass="labelInstr" text="2- Selecciona película:" wrapText="true">
                      <font>
                         <Font name="Arial Black" size="17.0" />
@@ -143,17 +143,17 @@
          <children>
             <VBox maxHeight="1.7976931348623157E308" spacing="10.0">
                <children>
-                  <Button fx:id="botonVenta" disable="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" opacity="0.15" styleClass="actionButts" text="Venta" textFill="WHITE">
+                  <Button fx:id="botonVenta" disable="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#efectuaVenta" opacity="0.15" styleClass="actionButts" text="Venta" textFill="WHITE">
                      <font>
                         <Font name="Arial Black" size="13.0" />
                      </font>
                   </Button>
-                  <Button fx:id="botonReserva" disable="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" opacity="0.15" styleClass="actionButts" text="Reserva" textFill="WHITE">
+                  <Button fx:id="botonReserva" disable="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#efectuaReserva" opacity="0.15" styleClass="actionButts" text="Reserva" textFill="WHITE">
                      <font>
                         <Font name="Arial Black" size="13.0" />
                      </font>
                   </Button>
-                  <Button fx:id="botonVentaReserva" disable="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" opacity="0.15" styleClass="actionButts" text="Venta con reserva" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                  <Button fx:id="botonVentaReserva" disable="true" maxWidth="1.7976931348623157E308" minHeight="-Infinity" mnemonicParsing="false" onAction="#efectuaVentaReserva" opacity="0.15" styleClass="actionButts" text="Venta con reserva" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Arial Black" size="13.0" />
                      </font>
